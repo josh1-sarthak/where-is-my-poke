@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> Photo Tagging App </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container"> 
+        <div id="left"> 
+            <div id="board">
+                <div class="pokes">
+                    <div class="Jigglypuff">
+                        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/039.png" height="100px" width="100px" alt="jigglypuff" /> <br>
+                        Jigglypuff
+                    </div>
+                    <div class="Charmander">
+                        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png" height="100px" width="100px" alt="charmander" /> <br>
+                        Charmander
+                    </div>
+                    <div class="Ivysaur">
+                        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png" height="100px" width="100px" alt="ivysaur" /> <br>
+                        Ivysaur
+                    </div>
+                </div>
+                <div class="message">
+                <strong> Feeback </strong> <br>
+                <span class="feedback-msg"> </span>
+                </div>
+                <div class="player">
+                <strong> Who Plays?  </strong> <br>
+                <span class="player-Name"> </span>
+                </div>
+            </div>
+            <div id="gameContent">
+                <img class="poke-wallpaper" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2b67f731-a21c-4ac8-8a91-65beb31ef176/d77ur7y-c526bf17-16a5-4939-af99-d7156ad06709.jpg/v1/fill/w_1600,h_2300,q_75,strp/pokemon_poster_by_viking011_d77ur7y-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvMmI2N2Y3MzEtYTIxYy00YWM4LThhOTEtNjViZWIzMWVmMTc2XC9kNzd1cjd5LWM1MjZiZjE3LTE2YTUtNDkzOS1hZjk5LWQ3MTU2YWQwNjcwOS5qcGciLCJoZWlnaHQiOiI8PTIzMDAiLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC8yYjY3ZjczMS1hMjFjLTRhYzgtOGE5MS02NWJlYjMxZWYxNzZcL3Zpa2luZzAxMS00LnBuZyIsIm9wYWNpdHkiOjk1LCJwcm9wb3J0aW9ucyI6MC40NSwiZ3Jhdml0eSI6ImNlbnRlciJ9fQ.vRvr1rmmHHbYG2vJf5FJIpZzUWTDTqMazidGui6o9vY" height="650px" width="1000px" alt="pokemon" />
+                <div class="modal">
+                    <div class="modal-content">
+                        <h3 class="closeModal"> &times; </h3> <br>
+                        Who would like to Play? Your Name please... <br>
+                        <input type="text" value="" /> <br>
+                        <button class="submitModal"> Submit </button>
+                    </div>
+                </div>
+                <div class="chooseTarget">
+                    <div class="box"> </div>
+                    <div class="dropDown">
+                        <div class="pokeName"> Jigglypuff </div>
+                        <div class="pokeName"> Charmander </div>
+                        <div class="pokeName"> Ivysaur </div>
+                    </div>
+                </div>
+                <span class="markJigglypuff marker">&#10006;</span>
+                <span class="markCharmander marker">&#10006;</span>
+                <span class="markIvysaur marker">&#10006;</span>
+            </div>
+        </div>
+        <div id="right"> 
+            <div class="timer">
+                <strong> Timer </strong> <br>
+                <span class="timer-count"> </span>
+            </div>
+            <div class="scores">
+                <h4> LeaderBoard <h4> <br>
+            </div>
+            <div>
+                <button class="openModal"> Play! </button>
+                <button class="reset"> Reset! </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+
+    <script>
+    // For Firebase JavaScript SDK v7.20.0 and later, `measurementId` is an optional field
+    var firebaseConfig = {
+    apiKey: "AIzaSyCQlfPIaRn0N1t0ssj3Y5hXTdWxi98vD7Q",
+    authDomain: "photo-tag-40637.firebaseapp.com",
+    projectId: "photo-tag-40637",
+    storageBucket: "photo-tag-40637.appspot.com",
+    messagingSenderId: "324952071314",
+    appId: "1:324952071314:web:d1b1edee6ad7fab9de9a4b",
+    measurementId: "G-Y46BHQTE2T"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    </script>
+    
+    <script src="main.js"> </script> 
+</body>
+</html>

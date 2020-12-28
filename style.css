@@ -1,0 +1,135 @@
+#container {
+    display: grid;
+    grid-template-columns: 3.5fr 1fr;
+    grid-template-rows: none;
+    width: 90vw;
+    margin: 30px auto;
+    font-family: monospace;
+    justify-content: center;
+    align-items: center;
+}
+
+#left {
+    border: 2px solid black;
+    height: 800px;
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 1fr 5fr;
+}
+
+#right {
+    border: 2px solid black;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#left #board {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 5px;
+    
+}
+
+#left #gameContent {
+    border: 2px solid black;
+    position: relative;
+}
+
+
+.poke-wallpaper {
+    object-fit: none;
+    object-position: 70% 100%;
+    display: block;
+}
+
+.pokes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px;
+}
+
+.pokes img {
+    border: 3px solid black;
+    margin: 5px;
+}
+
+.modal {
+    border: 2px solid black;
+    height: 130px;
+    width: 300px;
+    display: none;
+    position: absolute;
+    top: 200px;
+    right: 300px;
+    z-index: 1;
+    padding: 5px;
+    font-family: monospace;
+    background: white;
+}
+
+.closeModal {
+    float: right;
+    font-size: 30px;
+    margin-top: 0px;
+    cursor: pointer;
+}
+
+.submitModal {
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.chooseTarget {
+    position: absolute;
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    border: 4px dashed black;
+    float: left;
+}
+
+
+.dropDown {
+    cursor: pointer;
+    background: white;
+    float: left;
+}
+
+.pokeName {
+    padding: 5px;
+}
+.dropDown div:hover {
+    background: #ddd;
+}
+
+.done {
+    text-decoration: line-through;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.marker {
+    font-size:40px;
+    font-weight: 900;
+    position: absolute;
+    display: none;
+}
+
+.show-marker{
+    display: block;
+}
