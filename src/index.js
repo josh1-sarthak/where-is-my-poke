@@ -1,5 +1,6 @@
-const container = document.querySelector('#container');
+import './style.css';
 
+const container = document.querySelector('#container');
 const modal = document.querySelector('.modal');
 const openModal = document.querySelector('.openModal');
 const closeModal = document.querySelector('.closeModal');

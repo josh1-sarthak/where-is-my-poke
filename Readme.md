@@ -14,3 +14,4 @@ spinoff version of popular Where's Waldo game built with Pokemon Characters
 - CSS-Grid and Flexbox
 - Array methods
 - Firebase
+- Webpack
