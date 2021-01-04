@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nick2496/Where-is-my-Poke.git"
+    "url": "git+https://github.com/nick2496/where-is-my-poke.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nick2496/Where-is-my-Poke/issues"
+    "url": "https://github.com/nick2496/where-is-my-poke/issues"
   },
-  "homepage": "https://github.com/nick2496/Where-is-my-Poke#readme",
+  "homepage": "https://github.com/nick2496/where-is-my-poke#readme",
   "devDependencies": {
     "css-loader": "^5.0.1",
     "style-loader": "^2.0.0",
