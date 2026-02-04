@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
+const Dotenv = require("dotenv-webpack");
 
 module.exports = {
   entry: "./src/index.js",
@@ -16,6 +17,9 @@ module.exports = {
     }),
     new CopyPlugin({
       patterns: [{ from: "public/images", to: "images" }],
+    }),
+    new Dotenv({
+      systemvars: true, // This is the magic line!
     }),
   ],
   module: {
