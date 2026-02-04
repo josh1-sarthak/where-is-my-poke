@@ -4,7 +4,11 @@
   "description": "spinoff version of popular Where's Waldo game built with Pokemon Characters \r - One needs to find 3 old generation Pokes - Jigglypuff, Charmander, Ivysaur from the large photograph that contains hundreds of jumbled up pokes.\r - All the action happens only after clicking through the play button which changes the DOM- the timer, the current player and shows recurring feedback based on the choices made by the player in action\r - Along with each click through the photograph, target box is generated along with the options- if the choice comes out to be correct, DOM changes to notify the same.\r - Once all the choices are correct, the timer stops and current player data gets displayed in the leaderboard section along with the other players' logs.\r - Reset button resets the DOM to initial state to prepare it for next player's turn.",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --open",
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -15,10 +19,11 @@
   "bugs": {
     "url": "https://github.com/nick2496/where-is-my-poke/issues"
   },
-  "homepage": "https://github.com/nick2496/where-is-my-poke#readme",
+  "homepage": "https://github.com/josh1-sarthak/where-is-my-poke",
   "devDependencies": {
     "copy-webpack-plugin": "^13.0.1",
     "css-loader": "^5.0.1",
+    "gh-pages": "^6.3.0",
     "html-webpack-plugin": "^5.6.6",
     "style-loader": "^2.0.0",
     "webpack": "^5.11.1",
