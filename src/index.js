@@ -1,4 +1,6 @@
 import "./style.css";
+import firebase from "firebase/compat/app";
+import "firebase/compat/firestore";
 
 const container = document.querySelector("#container");
 const modal = document.querySelector(".modal");
@@ -26,11 +28,11 @@ const firebaseConfig = {
   measurementId: process.env.FIREBASE_MEASUREMENT_ID,
 };
 
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
 
-export const dbCharacter = collection(db, "characters");
-export const dbLeaderBoard = collection(db, "leaderboard");
+export const dbCharacter = db.collection("characters");
+export const dbLeaderBoard = db.collection("leaderboard");
 
 let foundPokes = [];
 let pokesCount = 0;
